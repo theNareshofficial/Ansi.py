@@ -1,3 +1,4 @@
+import os
 from ansi import *
 
 
@@ -37,6 +38,13 @@ def bg_color():
     print(f"{BG_WHITE}This is BG_WHITE")
 
 
+name = os.name
+
+if name == "nt":
+    os.system("cls")
+else:
+    os.system("clear")
+
 print(f"""{GREEN}{ITALIC}
 
 1.) Text Style
@@ -45,21 +53,22 @@ print(f"""{GREEN}{ITALIC}
 
 """)
 
-choice = int(input(f"{YELLOW}{BOLD}Enter Your Choice : "))
+while True:
+    choice = int(input(f"\n{YELLOW}{BOLD}Enter Your Choice : "))
 
-try:
-    if choice == 1:
-        text_style()
-    elif choice == 2:
-        foreground_color()
-    elif choice == 3:
-        bg_color()
-    else:
+    try:
+        if choice == 1:
+            text_style()
+        elif choice == 2:
+            foreground_color()
+        elif choice == 3:
+            bg_color()
+        else:
+            print(f"{RED}oops Invalid input!!!")
+
+    except ValueError:
+        print("oops Invalid input!!!")
+    except KeyboardInterrupt:
         print(f"{RED}oops Invalid input!!!")
-
-except ValueError:
-    print("oops Invalid input!!!")
-except KeyboardInterrupt:
-    print(f"{RED}oops Invalid input!!!")
-except EOFError:
-    print(f"{RED}oops Invalid input!!!")
+    except EOFError:
+        print(f"{RED}oops Invalid input!!!")
