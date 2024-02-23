@@ -10,7 +10,7 @@
 
 ## The main.py is an executable file if you execute the ansi code output in your terminal with a different style.
 
->**_NOTE:_**    I'm Testing Windows and Linux
+>**_NOTE:_**    I'm Testing Windows and Kali-Linux
 
 ## Installation
 
