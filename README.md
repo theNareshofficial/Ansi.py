@@ -2,7 +2,7 @@
 
 <p align='center'>This Ansi code Developed By <br> <a herf="https://www.instagram.com/the_naresh_offcial/">@thenareshofficial</p>
 
-## ANSI escape codes are special sequences of characters used to control the formatting, color, and other aspects of text output in the terminal. These codes are widely supported by terminal emulators and are used to add styling and colors to the text displayed in the terminal.
+## ANSI escape codes are special sequences of characters used to control the formatting like **Additional Text Styles**, **Additional Foreground Colors (256-color mode)**, **Additional Background Colors (256-color mode)** and other aspects of text output in the terminal. These codes are widely supported by terminal emulators and are used to add styling and colors to the text displayed in the terminal.
 
 ## In Python, you can use ANSI escape codes by including them in the strings that you print to the terminal. The escape codes are often represented using special characters, such as \033.
 
